@@ -15,6 +15,8 @@ import cors from 'cors';
 const server: Express = express();
 
 const server2 = createServer(server);
+console.log('rere');
+
 
 const io: Server<DefaultEventsMap, DefaultEventsMap, DefaultEventsMap, any> =
   new Server(server2, {
